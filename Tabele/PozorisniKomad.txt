@@ -1,0 +1,8 @@
+create table POZORISNI_KOMAD
+(
+    ID_KOMADA number(9) primary key,
+    NAZIV varchar2(50) not null,
+    TRAJANJE varchar2(8) not null,
+    BROJ_CINOVA number(2,0) not null,
+    KRATAK_OPIS varchar2(250) not null
+);

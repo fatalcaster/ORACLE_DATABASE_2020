@@ -1,0 +1,11 @@
+create table REZERVACIJA
+(
+    ID_REZERVACIJE number(9) primary key,
+    REDNI_BROJ number(4) not null,
+    DATUM date default sysdate not null,
+    BROJ_SEDISTA number(4) not null,
+    ID_KOMADA number(9),
+    constraint FK_ID_KOMADA foreign 
+    key(ID_KOMADA) references POZORISNI_KOMAD(ID_KOMADA)
+
+);
