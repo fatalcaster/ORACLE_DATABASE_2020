@@ -1,0 +1,8 @@
+create table PRETPLATNIK
+(
+    ID_PRETPLATNIKA number(9) constraint PK_ID_PRETPLATNIKA PRIMARY KEY,
+    ZEMLJA varchar2(15)  not NULL,
+    ADRESA varchar2(30)  not NULL,
+    TELEFONSKI_BROJ varchar2(12) not NULL
+    
+);
