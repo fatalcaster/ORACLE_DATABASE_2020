@@ -1,0 +1,65 @@
+INSERT INTO VM_POZORISNI_KOMAD
+(ID,NAZIV,TRAJANJE,BROJ_CINOVA,KRATAK_OPIS)
+VALUES
+(573268171,'VECERNJI TRKACI',INTERVAL '09:30' HOUR TO MINUTE, 3,'Posle nekog napada na pozorište os strane Gradsko komiteta SK, upravnik suspenduje komad bez obrazloženja.');
+
+INSERT INTO VM_POZORISNI_KOMAD
+(ID,NAZIV,TRAJANJE,BROJ_CINOVA,KRATAK_OPIS)
+VALUES
+(426874084,'DON ŽUAN BEOGRADSKI',INTERVAL '01:30' HOUR TO MINUTE, 5,'Komad skinut sa programa Jugoslovenskog dramskog pozorišta posle odlaska Alojza Šenka, a dolaskom Jovana Cirilova za upravnika.');
+
+INSERT INTO VM_POZORISNI_KOMAD
+(ID,NAZIV,TRAJANJE,BROJ_CINOVA,KRATAK_OPIS)
+VALUES
+(982031298,'PONAVLJAC',INTERVAL '02:30' HOUR TO MINUTE, 4,'Savremenost je nepresušni izvor koji inspiriše Svetozara Vlajkovica kao proznog i dramskog stvaraoca.');
+
+INSERT INTO VM_POZORISNI_KOMAD
+(ID,NAZIV,TRAJANJE,BROJ_CINOVA,KRATAK_OPIS)
+VALUES
+(139423286,'Marko&Musa',INTERVAL '03:30' HOUR TO MINUTE, 5,'Poznatu junačku pesmu „Kraljević Marko i Musa Kesedžija“ pisac obrađuje kao politički triler te svoj ironični odnos prema politici i političarima pretvara u komediju sa elementima igre, pesme i drugih folklornih ukrasa.');
+
+INSERT INTO VM_POZORISNI_KOMAD
+(ID,NAZIV,TRAJANJE,BROJ_CINOVA,KRATAK_OPIS)
+VALUES
+(930825309,'STVARI U VRTU',INTERVAL '01:45' HOUR TO MINUTE, 5,'Režija, Nenad Momcilovic');
+
+INSERT INTO VM_POZORISNI_KOMAD
+(ID,NAZIV,TRAJANJE,BROJ_CINOVA,KRATAK_OPIS)
+VALUES
+(139837987,'DO GOLE KOZE',INTERVAL '02:33' HOUR TO MINUTE, 5,'Pjer Valter Polic (po motivima priče Stivena Sinklera i Entonija Mekartena ), Režija: Pjer Valter Polic');
+
+INSERT INTO VM_POZORISNI_KOMAD
+(ID,NAZIV,TRAJANJE,BROJ_CINOVA,KRATAK_OPIS)
+VALUES
+(273563093,'GREJALICA',INTERVAL '03:33' HOUR TO MINUTE, 5,'U ovom komadu se na bajkoliki nacin ispreda stanje coveka raspetog izmedu neophodnosti prihvatanja kompromisa koje zahteva život medu ljudima');
+
+INSERT INTO VM_POZORISNI_KOMAD
+(ID,NAZIV,TRAJANJE,BROJ_CINOVA,KRATAK_OPIS)
+VALUES
+(450021128,'ZIDANJE',INTERVAL '00:33' HOUR TO MINUTE, 2,'Tekst je nagraden prvom nagradom na konkursu tri pozorišta koja su prema propozicijama bila obavezna da ga izvedu na svojim scenama.');
+
+
+INSERT INTO VM_POZORISNI_KOMAD
+(ID,NAZIV,TRAJANJE,BROJ_CINOVA,KRATAK_OPIS)
+VALUES
+(182828123,'I NEVIDLJIVI VOLI VATROMET',INTERVAL '02:25' HOUR TO MINUTE, 5,'Za komad je, ubrzo potom, zainteresovan mariborski reditelj Vojo Soldatovic, ali pozorište u Mariboru, navodno, baš tada ulazi u materijalnu krizu, te je realizacija onemogucena.');
+
+INSERT INTO VM_POZORISNI_KOMAD
+(ID,NAZIV,TRAJANJE,BROJ_CINOVA,KRATAK_OPIS)
+VALUES
+(258997983,'Strah i nada u NemačkojStrah i nada u Nemačkoj',INTERVAL '01:25' HOUR TO MINUTE, 5,'Premijera: 19. apr 2020.');
+
+insert into VM_POZORISNI_KOMAD(ID,NAZIV,TRAJANJE,BROJ_CINOVA,KRATAK_OPIS)
+values(494407956,'San letnje noci',INTERVAL '2:30' HOUR TO MINUTE,4,'Prica o snu jedne letnje noci');
+
+
+
+insert into VM_POZORISNI_KOMAD(ID,NAZIV,TRAJANJE,BROJ_CINOVA,KRATAK_OPIS)
+values(810938863,'Labudovo jezero',INTERVAL '2:30' HOUR TO MINUTE,4,'P.I. Cajkovski');
+
+
+insert into VM_POZORISNI_KOMAD(ID,NAZIV,TRAJANJE,BROJ_CINOVA,KRATAK_OPIS)
+values(226169295,'Mala crna haljina',INTERVAL '2:00' HOUR TO MINUTE,3,'Jedinstven umetnički performans.');
+
+insert into VM_POZORISNI_KOMAD(ID,NAZIV,TRAJANJE,BROJ_CINOVA,KRATAK_OPIS)
+values(521574230,'Ozaloscena porodica',INTERVAL '2:00' HOUR TO MINUTE,3,'Neke predstave su vanvremenske. Ovo je jedna od takvih.');

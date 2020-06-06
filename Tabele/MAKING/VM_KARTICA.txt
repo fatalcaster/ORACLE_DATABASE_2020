@@ -1,0 +1,10 @@
+create table VM_KARTICA
+(
+    BROJ varchar2(20) primary key,
+    DATUM_VAZENJA date default sysdate not null,
+    TIP_KARTICE varchar2(15) not null,
+    KRATAK_OPIS varchar(250) not null,
+    ID_PRETPLATNIKA number(9),
+    constraint KARTICA_ID_PRETPLATNIKA FOREIGN 
+    key(ID_PRETPLATNIKA) references VM_PRETPLATNIK(ID)
+);

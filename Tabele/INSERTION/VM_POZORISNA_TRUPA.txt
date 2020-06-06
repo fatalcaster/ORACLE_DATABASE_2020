@@ -1,0 +1,38 @@
+insert into VM_POZORISNA_TRUPA(ID,NAZIV)
+values(906083337,'FOX')
+
+insert into VM_POZORISNA_TRUPA(ID,NAZIV)
+values(695763346,'Hairyplay')
+
+insert into VM_POZORISNA_TRUPA(ID,NAZIV)
+values(149675313,'H.A.I.R.Y.')
+
+insert into VM_POZORISNA_TRUPA(ID,NAZIV)
+values(398135280,'Putujuci puz')
+
+insert into VM_POZORISNA_TRUPA(ID,NAZIV)
+values(810175392,'Nepoznati junaci')
+
+insert into VM_POZORISNA_TRUPA(ID,NAZIV)
+values(235688576,'Leptiri')
+
+insert into VM_POZORISNA_TRUPA(ID,NAZIV)
+values(235688577,'Srba')
+
+insert into VM_POZORISNA_TRUPA(ID,NAZIV)
+values(353724691,'Avanturisti')
+
+insert into VM_POZORISNA_TRUPA(ID,NAZIV)
+values(778333199,'URA!')
+
+insert into VM_POZORISNA_TRUPA(ID,NAZIV)
+values(383155493,'HATOR')
+
+insert into VM_POZORISNA_TRUPA(ID,NAZIV)
+values(967155117,'Knjazevacko srpski teatar - Joakim Vujic');
+
+insert into VM_POZORISNA_TRUPA(ID,NAZIV)
+values(721784079,'Trupa Knjazevackog pozorišta');
+
+insert into VM_POZORISNA_TRUPA(ID,NAZIV)
+values(231384234,'Trupa Narodnog pozorista u Beogradu');

@@ -1,0 +1,12 @@
+create table VM_PRETPLATNIK
+(
+    ID number(9) PRIMARY KEY,
+    ZEMLJA varchar2(15)  not NULL,
+    ADRESA varchar2(30)  not NULL,
+    TELEFONSKI_BROJ varchar2(12) not NULL
+);
+
+alter table "VM_PRETPLATNIK" add
+("IME" VARCHAR2(15))
+
+alter table "VM_PRETPLATNIK" modify ("IME" VARCHAR2(15) NOT NULL)

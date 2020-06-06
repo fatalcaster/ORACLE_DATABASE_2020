@@ -1,0 +1,98 @@
+--+1
+SELECT DATUM,IME
+FROM VM_REZERVACIJA rez JOIN VM_PRETPLATNIK pre
+ON (rez.ID_PRETPLATNIKA = pre.ID)
+WHERE rez.ID_KOMADA =
+(SELECT ID
+FROM VM_POZORISNI_KOMAD
+WHERE NAZIV='DO GOLE KOZE');
+
+--+2
+SELECT JMBG,IME,PREZIME
+FROM VM_GLUMAC
+WHERE ID_TRUPE =
+(SELECT ID
+FROM VM_POZORISNA_TRUPA
+WHERE NAZIV = 'Trupa Narodnog pozorista u Beogradu')
+ORDER BY PREZIME ASC;
+
+
+--+3 nezavrsen
+SELECT kom.NAZIV,EXTRACT(HOUR FROM kom.TRAJANJE)*60+EXTRACT(MINUTE FROM kom.TRAJANJE) as "TRAJANJE U MINUTIMA", pre.ID
+FROM VM_POZORISNI_KOMAD kom 
+JOIN  VM_VREME_ODRZAVANJA vr 
+ON (kom.ID = vr.ID_KOMADA)
+JOIN VM_PREDSTAVA pre
+ON (vr.ID_PREDSTAVE = pre.ID)
+WHERE kom.ID in
+    (
+        SELECT ID_KOMADA
+        FROM VM_VREME_ODRZAVANJA
+        WHERE ID_PREDSTAVE in
+        (
+            SELECT ID
+            FROM VM_PREDSTAVA
+            WHERE ID_TRUPE =
+            (
+                SELECT ID
+                FROM VM_POZORISNA_TRUPA
+                WHERE NAZIV = 'Trupa Knjazevackog pozorišta'
+            )
+        )
+    );
+
+
+--+4
+SELECT NAZIV,BROJ_MESTA*CENA_KARTE AS ZARADA
+FROM VM_POZORISNA_TRUPA tru JOIN VM_PREDSTAVA pre
+ON (tru.ID = pre.ID_TRUPE)
+WHERE pre.ID in
+    (
+        SELECT ID_PREDSTAVE
+        FROM VM_VREME_ODRZAVANJA
+        WHERE ID_KOMADA in
+            (
+                SELECT ID
+                FROM VM_POZORISNI_KOMAD
+                WHERE NAZIV = 'San letnje noci'
+            )
+    );
+
+
+
+--+5
+SELECT NAZIV
+FROM VM_POZORISNI_KOMAD
+WHERE ID in
+    (
+        SELECT ID_KOMADA
+        FROM VM_VREME_ODRZAVANJA
+        WHERE ID_PREDSTAVE in
+            (
+                SELECT ID
+                FROM VM_PREDSTAVA
+                WHERE JMBG_PRODUCENTA='156'
+            )
+    );
+
+
+--+6
+SELECT IME,BROJ,DATUM_VAZENJA,TIP_KARTICE
+FROM VM_PRETPLATNIK pre JOIN VM_KARTICA kart
+ON(pre.ID = kart.ID_PRETPLATNIKA)
+WHERE ID_PRETPLATNIKA in
+(
+    SELECT ID_PRETPLATNIKA
+    FROM VM_REZERVACIJA
+    WHERE DATUM>='01/01/2015' AND DATUM<='01/01/2016'
+);
+
+--+7
+SELECT *
+FROM VM_REZERVACIJA
+WHERE BROJ_SEDISTA>5;
+
+
+
+
+

@@ -1,0 +1,14 @@
+create table VM_REZERVACIJA
+(
+    ID number(9) primary key,
+    REDNI_BROJ number(4) not null,
+    DATUM date default sysdate not null,
+    BROJ_SEDISTA number(4) not null,
+    ID_KOMADA number(9),
+    ID_PRETPLATNIKA number(9),
+    constraint REZ_ID_KOMADA foreign 
+    key(ID_KOMADA) references VM_POZORISNI_KOMAD(ID)
+    constraint REZ_ID_PRETPLATNIKA foreign 
+    key(ID_PRETPLATNIKA) references VM_PRETPLATNIK(ID)
+
+);
